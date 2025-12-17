@@ -66,8 +66,14 @@ async def start(c: Client, m: Union[Message, CallbackQuery]):
         "SELECT main_img, channel_user, support_user FROM bot_config WHERE ROWID = 0"
     ).fetchone()
 
-    start_message = f"""‌<a href='{bot_logo}'>&#8204</a><b><b>⭐️ Olá {m.from_user.first_name}, Seja bem vindo</b> ⭐️
-<b> ❓Dúvidas❓ - chame o <a href="https://t.me/DanteSuporte_bot">Suporte</a>
+    start_message = f"""
+<a href="{bot_logo}">&#8204;</a>
+<b>⭐️ Olá {m.from_user.first_name}, seja bem-vindo ⭐️</b>
+
+<b>❓ Dúvidas?</b> — chame o 
+<a href="https://t.me/DanteSuporte_bot">Suporte</a>
+"""
+
 ✅ Checkadas na hora pelo bot!
 ✅ Logins De Todo Tipo!
 👤 Todas com nome e CPF!
