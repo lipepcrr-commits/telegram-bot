@@ -45,7 +45,7 @@ async def start(c: Client, m: Union[Message, CallbackQuery]):
                         "🎁 <b>Parabéns!</b>\n\n"
                         f"O usuário {mention} se vinculou ao seu link de afiliado."
                     ),
-                    parse_mode="html",
+                    parse_mode="HTML",
                 )
             except BadRequest:
                 pass
