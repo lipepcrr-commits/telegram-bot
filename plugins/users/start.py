@@ -66,22 +66,20 @@ async def start(c: Client, m: Union[Message, CallbackQuery]):
         "SELECT main_img, channel_user, support_user FROM bot_config WHERE ROWID = 0"
     ).fetchone()
 
-    start_message = f"""
+start_message = f"""
 <a href="{bot_logo}">&#8204;</a>
 <b>⭐️ Olá {m.from_user.first_name}, seja bem-vindo ⭐️</b>
 
 <b>❓ Dúvidas?</b> — chame o 
 <a href="https://t.me/DanteSuporte_bot">Suporte</a>
-"""
 
 ✅ Checkadas na hora pelo bot!
-✅ Logins De Todo Tipo!
-👤 Todas com nome e CPF!
+✅ Logins de todo tipo!
 💰 Faça recargas rapidamente pelo /pix!
-💳 CC's virgens diretamente do painel!
-📝 Antes de comprar leia as 👉 <a href="https://t.me/">Regras</a> </b>
+📝 Antes de comprar leia as 👉 <a href="https://t.me/">Regras</a>
 
-{get_info_wallet(m.from_user.id)}"""
+{get_info_wallet(m.from_user.id)}
+"""
 
     if isinstance(m, CallbackQuery):
         send = m.edit_message_text
