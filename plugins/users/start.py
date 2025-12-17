@@ -91,6 +91,6 @@ async def start(c: Client, m: Union[Message, CallbackQuery]):
     await send(
         start_message,
         reply_markup=kb,
-        parse_mode="html",
+        parse_mode="HTML",
         disable_web_page_preview=False,
     )
