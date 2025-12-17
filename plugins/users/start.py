@@ -67,7 +67,7 @@ async def start(c: Client, m: Union[Message, CallbackQuery]):
     ).fetchone()
 
     start_message = f"""‌<a href='{bot_logo}'>&#8204</a><b><b>⭐️ Olá {m.from_user.first_name}, Seja bem vindo</b> ⭐️
-<b> ❓Dúvidas❓ - chame o <a href="https://t.me/gringomdz">Suporte</a>
+<b> ❓Dúvidas❓ - chame o <a href="https://t.me/DanteSuporte_bot">Suporte</a>
 ✅ Checkadas na hora pelo bot!
 ✅ Logins De Todo Tipo!
 👤 Todas com nome e CPF!
